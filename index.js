@@ -30,6 +30,7 @@ app.post('/mensagens', (req, res) => {
     // Obtendo a menagem que foi recebida através do body da requisição
     const mensagem = req.body.mensagem;
 
+    // Obtendo o ID da nova mensagem
     const id = mensagens.length;
 
     // Insiro a mensagem na lista de mensagens
