@@ -31,7 +31,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"mensagem\": \"Hello World\"\r\n}",
+					"raw": "{\r\n    \"mensagem\": \"Olá, mundo!\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -47,6 +47,55 @@
 					"port": "3000",
 					"path": [
 						"mensagens"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Editar mensagem por ID",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"mensagem\": \"Mensagem editada\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/mensagens/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"mensagens",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Visualizar mensagem por ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/mensagens/0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"mensagens",
+						"0"
 					]
 				}
 			},
